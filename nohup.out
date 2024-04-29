@@ -1,0 +1,188 @@
+[2024-03-23 12:16:09 +0000] [206139] [INFO] Starting gunicorn 20.1.0
+[2024-03-23 12:16:09 +0000] [206139] [INFO] Listening at: http://0.0.0.0:8088 (206139)
+[2024-03-23 12:16:09 +0000] [206139] [INFO] Using worker: sync
+[2024-03-23 12:16:09 +0000] [206140] [INFO] Booting worker with pid: 206140
+[2024-03-23 12:16:09 +0000] [206140] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+                ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+                    ^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 384, in import_app
+    mod = importlib.import_module(module)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/html/score_scrape/sitemap_app.py", line 3, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+[2024-03-23 12:16:09 +0000] [206140] [INFO] Worker exiting (pid: 206140)
+[2024-03-23 12:16:09 +0000] [206139] [INFO] Shutting down: Master
+[2024-03-23 12:16:09 +0000] [206139] [INFO] Reason: Worker failed to boot.
+[2024-03-23 12:16:47 +0000] [206160] [INFO] Starting gunicorn 20.1.0
+[2024-03-23 12:16:47 +0000] [206160] [INFO] Listening at: http://0.0.0.0:8088 (206160)
+[2024-03-23 12:16:47 +0000] [206160] [INFO] Using worker: sync
+[2024-03-23 12:16:47 +0000] [206161] [INFO] Booting worker with pid: 206161
+[2024-03-23 12:16:47 +0000] [206161] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+                ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+                    ^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 384, in import_app
+    mod = importlib.import_module(module)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/html/score_scrape/sitemap_app.py", line 3, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+[2024-03-23 12:16:47 +0000] [206161] [INFO] Worker exiting (pid: 206161)
+[2024-03-23 12:16:47 +0000] [206160] [INFO] Shutting down: Master
+[2024-03-23 12:16:47 +0000] [206160] [INFO] Reason: Worker failed to boot.
+[2024-03-23 12:17:26 +0000] [206175] [INFO] Starting gunicorn 20.1.0
+[2024-03-23 12:17:26 +0000] [206175] [INFO] Listening at: http://0.0.0.0:8088 (206175)
+[2024-03-23 12:17:26 +0000] [206175] [INFO] Using worker: sync
+[2024-03-23 12:17:26 +0000] [206176] [INFO] Booting worker with pid: 206176
+[2024-03-23 12:17:26 +0000] [206176] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+                ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+                    ^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 384, in import_app
+    mod = importlib.import_module(module)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/html/score_scrape/sitemap_app.py", line 7, in <module>
+    from flask import Flask, request, send_file, jsonify
+ModuleNotFoundError: No module named 'flask'
+[2024-03-23 12:17:26 +0000] [206176] [INFO] Worker exiting (pid: 206176)
+[2024-03-23 12:17:26 +0000] [206175] [INFO] Shutting down: Master
+[2024-03-23 12:17:26 +0000] [206175] [INFO] Reason: Worker failed to boot.
+[2024-03-23 19:42:56 +0000] [209946] [INFO] Starting gunicorn 21.2.0
+[2024-03-23 19:42:56 +0000] [209946] [INFO] Listening at: http://0.0.0.0:8088 (209946)
+[2024-03-23 19:42:56 +0000] [209946] [INFO] Using worker: sync
+[2024-03-23 19:42:56 +0000] [209947] [INFO] Booting worker with pid: 209947
+[2024-03-23 20:03:28 +0000] [209946] [INFO] Handling signal: hup
+[2024-03-23 20:03:28 +0000] [209946] [INFO] Hang up: Master
+[2024-03-23 20:03:28 +0000] [210032] [INFO] Booting worker with pid: 210032
+[2024-03-23 20:03:28 +0000] [209946] [ERROR] Worker (pid:209947) was sent SIGHUP!
+[2024-03-26 03:55:49 +0000] [209946] [CRITICAL] WORKER TIMEOUT (pid:210032)
+[2024-03-26 03:55:49 +0000] [210032] [INFO] Worker exiting (pid: 210032)
+Analysis completed.
+Analysis completed.
+Analysis completed.
+[2024-03-26 03:55:50 +0000] [209946] [ERROR] Worker (pid:210032) was sent SIGKILL! Perhaps out of memory?
+[2024-03-26 03:55:50 +0000] [247627] [INFO] Booting worker with pid: 247627
+[2024-03-28 16:45:37 +0000] [209946] [CRITICAL] WORKER TIMEOUT (pid:247627)
+[2024-03-28 16:45:37 +0000] [247627] [INFO] Worker exiting (pid: 247627)
+[2024-03-28 16:45:37 +0000] [272091] [INFO] Booting worker with pid: 272091
+[2024-03-29 10:20:51 +0000] [209946] [CRITICAL] WORKER TIMEOUT (pid:272091)
+[2024-03-29 10:20:51 +0000] [272091] [INFO] Worker exiting (pid: 272091)
+Analysis completed.
+Analysis completed.
+Analysis completed.
+Analysis completed.
+[2024-03-29 10:20:51 +0000] [278312] [INFO] Booting worker with pid: 278312
+[2024-03-29 10:21:29 +0000] [209946] [CRITICAL] WORKER TIMEOUT (pid:278312)
+[2024-03-29 10:21:29 +0000] [278312] [INFO] Worker exiting (pid: 278312)
+[2024-03-29 10:21:29 +0000] [278320] [INFO] Booting worker with pid: 278320
+[2024-03-29 12:00:29 +0000] [209946] [CRITICAL] WORKER TIMEOUT (pid:278320)
+[2024-03-29 12:00:29 +0000] [278320] [INFO] Worker exiting (pid: 278320)
+Analysis completed.
+[2024-03-29 12:00:29 +0000] [278675] [INFO] Booting worker with pid: 278675
+[2024-03-29 12:04:37 +0000] [209946] [CRITICAL] WORKER TIMEOUT (pid:278675)
+[2024-03-29 12:04:37 +0000] [278675] [INFO] Worker exiting (pid: 278675)
+[2024-03-29 12:04:37 +0000] [278682] [INFO] Booting worker with pid: 278682
+[2024-03-30 22:24:13 +0000] [278682] [WARNING] Invalid request from ip=134.122.118.232: Invalid HTTP method: '\x05\x04\x00\x01\x02\x80\x05\x01\x00\x03'
+[2024-03-30 22:24:20 +0000] [278682] [WARNING] Invalid request from ip=134.122.118.232: Invalid HTTP request line: ''
+[2024-03-30 22:24:20 +0000] [278682] [WARNING] Invalid request from ip=134.122.118.232: Invalid HTTP Version: 'RTSP/1.0'
+[2024-03-30 22:24:25 +0000] [278682] [WARNING] Invalid request from ip=134.122.118.232: Invalid HTTP request line: 'EHLO'
+[2024-03-30 22:24:25 +0000] [278682] [WARNING] Invalid request from ip=134.122.118.232: Invalid HTTP request line: 'HELP'
+[2024-03-30 22:24:27 +0000] [278682] [WARNING] Invalid request from ip=134.122.118.232: Invalid HTTP request line: '\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie: mstshash=beio'
+[2024-03-30 22:24:40 +0000] [278682] [WARNING] Invalid request from ip=134.122.118.232: Invalid HTTP Version: 'SIP/2.0'
+[2024-03-30 22:25:00 +0000] [278682] [WARNING] Invalid request from ip=134.122.118.232: Invalid HTTP request line: 'WWWOFFLE STATUS'
+[2024-03-30 22:25:07 +0000] [278682] [WARNING] Invalid request from ip=134.122.118.232: Invalid HTTP request line: 'stats'
+[2024-03-30 22:25:19 +0000] [278682] [WARNING] Invalid request from ip=134.122.118.232: Invalid HTTP method: '\x1b%-12345X@PJL'
+[2024-03-30 22:25:21 +0000] [278682] [WARNING] Invalid request from ip=134.122.118.232: Invalid HTTP request line: 'serverstatus'
+[2024-03-30 22:25:34 +0000] [278682] [WARNING] Invalid request from ip=134.122.118.232: Invalid HTTP request line: '*1'
+[2024-03-30 22:25:36 +0000] [278682] [WARNING] Invalid request from ip=134.122.118.232: Invalid HTTP request line: 'show info'
+[2024-03-30 22:25:44 +0000] [278682] [WARNING] Invalid request from ip=134.122.118.232: Invalid HTTP request line: 'ver'
+[2024-03-30 22:26:07 +0000] [278682] [WARNING] Invalid request from ip=134.122.118.232: Invalid HTTP Version: 'INFO'
+[2024-03-30 22:26:25 +0000] [278682] [WARNING] Invalid request from ip=134.122.118.232: Invalid HTTP request line: "\x03\x00\x00,'à\x00\x00\x00\x00\x00Cookie: mstshash=Administrator"
+[2024-04-01 15:25:08 +0000] [209946] [CRITICAL] WORKER TIMEOUT (pid:278682)
+[2024-04-01 15:25:08 +0000] [278682] [INFO] Worker exiting (pid: 278682)
+Analysis completed.
+[2024-04-01 15:25:09 +0000] [299002] [INFO] Booting worker with pid: 299002
+[2024-04-01 19:46:07 +0000] [299002] [INFO] Parent changed, shutting down: <Worker 299002>
+[2024-04-01 19:46:07 +0000] [299002] [INFO] Worker exiting (pid: 299002)
+[2024-04-01 19:47:59 +0000] [300106] [INFO] Starting gunicorn 21.2.0
+[2024-04-01 19:47:59 +0000] [300106] [INFO] Listening at: http://0.0.0.0:8088 (300106)
+[2024-04-01 19:47:59 +0000] [300106] [INFO] Using worker: sync
+[2024-04-01 19:47:59 +0000] [300107] [INFO] Booting worker with pid: 300107
+[2024-04-01 20:20:25 +0000] [300106] [INFO] Handling signal: hup
+[2024-04-01 20:20:25 +0000] [300106] [INFO] Hang up: Master
+[2024-04-01 20:20:25 +0000] [300282] [INFO] Booting worker with pid: 300282
+[2024-04-01 20:20:25 +0000] [300106] [ERROR] Worker (pid:300107) was sent SIGHUP!
+[2024-04-17 05:23:13 +0000] [300282] [WARNING] Invalid request from ip=138.68.67.6: Invalid HTTP method: '\x05\x04\x00\x01\x02\x80\x05\x01\x00\x03'
+[2024-04-17 05:23:18 +0000] [300282] [WARNING] Invalid request from ip=138.68.67.6: Invalid HTTP request line: ''
+[2024-04-17 05:23:24 +0000] [300282] [WARNING] Invalid request from ip=138.68.67.6: Invalid HTTP request line: 'HELP'
